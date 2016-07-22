@@ -1,4 +1,13 @@
 <?php
+/* Challenge #274 [Intermediate] Calculating De Bruijn Sequences
+   Write a function to generate a de Bruijn sequence
+   A De Bruijn sequence B(2, 3) (with alphabet 0 and 1) is:
+    00010111
+   Inputs:
+        $k = an integer or a string of unique characters
+        $n = the length of subsequences that should be included in the sequence
+
+*/
 
 function DeBruijn($k, $n){
     if(is_int($k)){

@@ -1,4 +1,10 @@
 <?php
+/* Challenge #271 [Easy] Critical Hit
+   Given damage dealt and hit points remaining, calculate probability to kill
+   Condition - Max damage = roll dice again
+
+   Recursive 1-line solution
+*/
 function probToDie($d, $h){ return ($h > $d) ? probToDie($d, $h-$d)/$d : ($d-$h+1)/$d; }
 
 echo probToDie(4,1) . "<br>";
